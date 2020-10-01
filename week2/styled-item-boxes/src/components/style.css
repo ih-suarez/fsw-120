@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+}
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.div-box {
+    border: 2px solid ghostwhite;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    width: 780px;
+    text-align: center;
+    margin: 20px 10px 20px;
+    box-shadow:  5px 5px c;
+}
+.title {
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    background-color: cadetblue;
+    padding: 20px 30px 20px;
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    font-size: 30px;
+    float: left;
+    
+}
+.subtitle {
+    font-size: 15px;
+}
