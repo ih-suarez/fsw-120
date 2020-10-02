@@ -13,6 +13,7 @@ body {
     border-radius: 10px;
     background-color: ghostwhite;
     width: 780px;
+    height: 100px;
     text-align: center;
     margin: 20px 10px 20px;
     box-shadow:  5px 5px c;
@@ -23,6 +24,7 @@ body {
     background-color: cadetblue;
     padding: 20px 30px 20px;
     margin: 0;
+    height: 56px;
     font-family: 'Heebo', sans-serif;
     font-size: 30px;
     float: left;

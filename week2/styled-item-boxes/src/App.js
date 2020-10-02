@@ -28,7 +28,7 @@ const App = () => {
             />
             <Blog 
                 title="Hello Society"
-                subtitle="What is the greates society around?"
+                subtitle="What is the greatest society around?"
                 information="We have gathered data over thousands of years and, sadly, no society will ever be good enough for people unrealistic standards. "
             />
             <Blog 
@@ -54,7 +54,7 @@ const App = () => {
             <Blog 
                 title="Hello You"
                 subtitle="Did you make it this far?"
-                information="Or are you just skiming through? "
+                information="Or are you just skiming through?"
             />
         </div>
     )
