@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1502920514313-52581002a659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1647&q=80);
+
+}
+.mapContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.spotBox {
+    border: 2px solid gainsboro;
+    box-shadow: 15px 15px 15px black;
+    border-radius: 10px;
+    width: 650px;
+    margin: 10px;
+    text-align: center;
+    opacity: 85%;
+}
+.spot {
+    font-size: 50px;
+    font-style: oblique;
+    color: white;
+    text-shadow: 0 0 20px black;
+}
+.price{
+    display: inline-block;
+    border: 3px solid green;
+    width: 100px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: gold;
+    font-size: 25px;
+    font-weight: bolder;
+    color: ivory;
+    text-shadow: 0 0 20px black;
+}
+.timeToGo {
+    font-size: 40px;
+    color: antiquewhite;
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 0 0 15px black;
+}
