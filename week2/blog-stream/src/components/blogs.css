@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-color: rgba(173, 216, 230, 0.568);
+}
+/* header */
+.navOptions {
+    display: flex;
+    justify-content: space-evenly;
+}
+.listStyle {
+    display: flex;
+    list-style: none;
+}
+li {
+    margin: 0 40px 0;
+}
+.myBlog {
+    color: rgb(66, 84, 102);
+    margin-top: 20px;
+    text-align: left;
+}
+.home, .contact, .blog {
+    color: rgb(46, 54, 61);
+    text-decoration: none;
+}
+.headerBox{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 350px;
+    text-shadow: 0 0 100px black;
+    
+}
+.headerStyle {
+    background-color: rgba(97, 97, 97, 0.541);
+    color: rgba(173, 216, 230, 0.568);
+    height: 500px;
+}
+.blogHead {
+    margin-top: 75px;
+    font-size: 70px;
+}
+.blogListBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* blog posts */
+
+.blogBox {
+    border-bottom: 2px solid rgba(119, 136, 153, 0.555);
+    width: 400px;
+}
+.title {
+    font-size: 26px;
+    font-style: oblique;
+    font-weight: bolder;
+}
+.subTitle {
+    color: dimgrey;
+    font-size: medium;
+    font-weight: lighter;
+    font-style: italic;
+}
+.author {
+    font-size: smaller;
+    font-weight: bolder;
+    font-style: normal;
+}
+.date {
+    float: right;
+}
+.button{
+    position: relative;
+    top: 5px;
+    left: 140px;
+}
+/* Footer */
+.footer{
+    text-align: center;
+    background-color: lightslategray;
+    height: 40px;
+}
