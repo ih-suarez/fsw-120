@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: honeydew;
+}
+.header {
+    display: block;
+    text-align: center;
+    padding: 40px;
+    background-color: gold;
+    font-family: 'Comic Neue', cursive;
+    font-size: 60px;
+    text-shadow:  5px 5px 5px white;
+}
+.heroPosts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px 0px;
+    background-color: rgba(211, 211, 211, 0.658);
+}
+.heroImage {
+    display: block;
+    width: 150px;
+    height: 180px;
+    float: left;
+}
+.heroData:hover{
+    box-shadow: 10px 5px 50px;
+}
+.heroData {
+    display: flex;
+    background-color: rgba(30, 143, 255, 0.63);
+    margin: 50px 20px 50px;
+}
+.ShowAndName {
+    width: 160px;
+}
+.heroName {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+}
+.heroShow {
+    text-align: center;
+}
