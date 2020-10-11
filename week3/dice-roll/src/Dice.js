@@ -15,20 +15,7 @@ class Dice extends Component {
             dieResetsIn: 3
         
     }
-    // clickEvent = () => {
-    //     this.setState(prevState => {
-    //         return {
-    //             dieOne: prevState.dieOne,
-    //             dieTwo: prevState.dieTwo,
-    //             dieThree: prevState.dieThree,
-    //             dieFour: prevState.dieFour,
-    //             dieFive: prevState.dieFive,
-    //                 dieSelected: [],
-    //                 dieResetsIn: prevState -1
-    //         }
-    //     })
-    // }
-    
+
     DieRoll = () => {
         const rollDice = () => _.random(1, 6) 
         const diceReset = this.state.dieResetsIn
@@ -71,6 +58,7 @@ class Dice extends Component {
             // })}}
 
                 
+
                 if(!_.includes(this.state.dieSelected, 'Die One')) 
                     {this.setState({dieOne: rollDice()})}
                 if(!_.includes(this.state.dieSelected, 'Die Two')) 
@@ -80,16 +68,17 @@ class Dice extends Component {
                 if(!_.includes(this.state.dieSelected,  'Die Four')) 
                     {this.setState({dieFour: rollDice()})}
                 if(!_.includes(this.state.dieSelected, 'Die Five')) 
-                    {this.setState({dieFive: rollDice()})
+                    {this.setState({dieFive: rollDice()})}
                 this.setState({dieResetsIn: diceReset - 1})
             }
         }
-    }
-
+            
     KeepDie = (die) => {
         let dieArray = _.concat(this.state.dieSelected, die)
             this.setState({dieSelected: dieArray})
     }
+
+    
 
     render() { 
         return (

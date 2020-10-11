@@ -6,8 +6,8 @@ import Die from './Die'
 
 let DieDisplay = ({itemSelected, state}) => 
     <div>
-        <h1>Shall We Roll The Dice?</h1>
-        <Die name='Die One' state={state.dieOne} userSelected={_.includes(state.dieSelected, 'Die One')} itemSelected={itemSelected} />
+        <h1>Shall We Roll The Die</h1>
+        <Die name='Die One' state={state.dieOne} userSelected={_.includes(state.dieSelected, 'Die One')} itemSelected={itemSelected}/>
         <Die name='Die Two' state={state.dieTwo} userSelected={_.includes(state.dieSelected, 'Die Two')} itemSelected={itemSelected}/>
         <Die name='Die Three' state={state.dieThree} userSelected={_.includes(state.dieSelected, 'Die Three')} itemSelected={itemSelected}/>
         <Die name='Die Four' state={state.dieFour} userSelected={_.includes(state.dieSelected, 'Die Four')} itemSelected={itemSelected}/>
