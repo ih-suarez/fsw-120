@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    background-color: rgba(112, 128, 144, 0.205);
+    text-align: center;
+}
+.dieContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 100px 150px ;
+}
