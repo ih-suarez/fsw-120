@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Die = ({userSelected, itemSelected, state, name}) =>     
-    <h4 onClick={() => itemSelected([name])} style={userSelected ? {backgroundColor: 'tomato'} : {backgroundColor: 'transparent'}}> 
+const Die = ({ state, name}) =>     
+    <h4> 
         {name}: {state}
     </h4>
 

@@ -15,7 +15,19 @@ class Dice extends Component {
             dieResetsIn: 3
         
     }
-
+    // clickEvent = () => {
+    //     this.setState(prevState => {
+    //         return {
+    //             dieOne: prevState.dieOne,
+    //             dieTwo: prevState.dieTwo,
+    //             dieThree: prevState.dieThree,
+    //             dieFour: prevState.dieFour,
+    //             dieFive: prevState.dieFive,
+    //                 dieSelected: [],
+    //                 dieResetsIn: prevState -1
+    //         }
+    //     })
+    // }
     KeepDie = (die) => {
         let dieArray = _.concat(this.state.dieSelected, die)
             this.setState({dieSelected: dieArray})
