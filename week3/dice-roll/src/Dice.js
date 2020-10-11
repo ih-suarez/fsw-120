@@ -28,10 +28,7 @@ class Dice extends Component {
     //         }
     //     })
     // }
-    KeepDie = (die) => {
-        let dieArray = _.concat(this.state.dieSelected, die)
-            this.setState({dieSelected: dieArray})
-    }
+    
     DieRoll = () => {
         const rollDice = () => _.random(1, 6) 
         const diceReset = this.state.dieResetsIn
@@ -89,7 +86,10 @@ class Dice extends Component {
         }
     }
 
-    
+    KeepDie = (die) => {
+        let dieArray = _.concat(this.state.dieSelected, die)
+            this.setState({dieSelected: dieArray})
+    }
 
     render() { 
         return (
