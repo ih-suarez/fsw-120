@@ -79,7 +79,7 @@ class Dice extends Component {
         return (
             <div className='dieContainer'>
                 <DieDisplay state={this.state} itemSelected={this.KeepDie} />
-                <h5>Die Resets in ... {this.state.dieResetsIn}</h5>
+                <h3>Die Resets in ... {this.state.dieResetsIn}</h3>
                 <button onClick={this.DieRoll}>Roll The Dice</button>
             </div>
         );
