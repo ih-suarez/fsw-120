@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1544785349-c4a5301826fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+}
+.djLights {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 300px;
+    justify-content: space-evenly;
+}
+.mixingBoard {
+    height: 250px;
+    width: 400px;
+    
+}
+.djBoard {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.678);
+    margin: 0px 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.moreDjButtons {
+    height: 100px;
+    background-color:  rgba(0, 0, 0, 0.678);
+    margin: 0px 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+button {
+    margin: auto;
+    height: fit-content;
+    background-color: honeydew;
+}
