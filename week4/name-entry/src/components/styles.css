@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+     border: 2px solid gainsboro;
+    background-color: gainsboro;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid ghostwhite;
+    background-color: ghostwhite;
+    box-shadow: 40px 40px 40px black;
+    width: 600px;
+    margin: 180px auto;
+    text-align: center;
+}
+.list {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin: auto;
+    padding: 5px;
+}
