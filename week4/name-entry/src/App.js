@@ -41,7 +41,6 @@ class App extends Component {
                     <span><button>Submit</button></span>
                     <br />
                     <h1>{this.state.fullName}</h1>
-                    
                 </form>
                 <h4>Name Entries</h4>
                 <ul className='list'>
