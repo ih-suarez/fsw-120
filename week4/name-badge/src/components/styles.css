@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: honeydew;
+}
+
+main {
+    margin: 50px 100px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 20px 50px;
+    width: 600px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: ghostwhite;
+}
+
+input {
+    margin: 10px;
+    width: 200px;
+}
+
+textarea {
+    margin: 10px;
+    width: 495px;
+    height: 100px;
+}
+
+button {
+    margin: 15px;
+}
+
+.badge {
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px 50px;
+}
+
+.badge {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: ghostwhite;
+}
+
+p {
+    margin: 10px;
+    width: 215px;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    border-radius: 2px;
+    background-color: white;
+}
+
+h3 {
+    display: block;
+    width: 700px;
+    margin: 20px auto 0;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+}
+
+.textArea {
+    margin: 10px;
+    width: 495px;
+    height: 100px;
+}
