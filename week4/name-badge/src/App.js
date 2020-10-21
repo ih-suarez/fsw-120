@@ -44,7 +44,6 @@ class App extends Component {
                 <p> Favorite Food: ${this.state.favoriteFood}</p>
                 <p class="textArea"> About You: ${this.state.interests}</p>
             </div>
-            
         </div>` 
         this.state.badges.push(badge)
         badgeContainer.innerHTML = badge
@@ -114,10 +113,8 @@ class App extends Component {
                     <div className='button'>
                         <button>Submit Badge</button>
                     </div>
-                    
                 </form>
-        <div id='badgeContainer'>
-        </div>
+        <div id='badgeContainer'></div>
             </main>
         )
     }
