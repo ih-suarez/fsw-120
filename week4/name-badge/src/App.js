@@ -53,7 +53,7 @@ class App extends Component {
                 <p class="textArea"> About You: ${this.state.interests}</p>
             </div>
         </div>` 
-        this.state.badges.push(badge)
+        this.setState({badges: [badge, ...this.state.badges]})
         badgeContainer.innerHTML = badge
         console.log(this.state.badges)
     }
@@ -109,7 +109,7 @@ class App extends Component {
                         type='tel'
                         pattern='[0-9]{10}'
                         onChange={this.handleChange}
-                        placeholder='1233217895'
+                        placeholder='Phone Number'
                     />
                     <br />
                     <input 
