@@ -3,6 +3,7 @@ import _ from '../node_modules/lodash'
 
 import './components/styles.css'
 
+
 class App extends Component {
     constructor(props) {
         super(props)
@@ -25,13 +26,20 @@ class App extends Component {
             [name]: value
         })
     }
+    checkButton = () => {
+        let isButtonDisabled = true
+        for (const [key, value] of Object.entries(this.state)) {
+            console.log(value)
+            if(key !== 'badges' && value.length >= 3){
+                isButtonDisabled = false
+            }
+        }
+        console.log(isButtonDisabled)
+        return isButtonDisabled
+    }
     handleSubmit(e) {
         e.preventDefault()
-        _.forEach(_.toPairs(Object, this.state), ([key, value]) => {
-            if(value.length < 3 || value === '') {
-                alert(`Missing or invalid fields`)
-            }
-        })
+        
         const badgeContainer = document.getElementById('badgeContainer')
         const badge = 
         `<div class="output">
@@ -56,6 +64,8 @@ class App extends Component {
                     <input 
                         name='firstName'
                         value={this.state.firstName}
+                        required={true}
+                        minLength={3}
                         type='text'
                         onChange={this.handleChange}
                         placeholder='First Name'
@@ -64,6 +74,8 @@ class App extends Component {
                     <input 
                         name='lastName'
                         value={this.state.lastName}
+                        required={true}
+                        minLength={3}
                         type='text'
                         onChange={this.handleChange}
                         placeholder='Last Name'
@@ -72,6 +84,8 @@ class App extends Component {
                     <input 
                         name='email'
                         value={this.state.email}
+                        required={true}
+                        minLength={3}
                         type='email'
                         onChange={this.handleChange}
                         placeholder='Email'
@@ -80,6 +94,8 @@ class App extends Component {
                     <input 
                         name='placeOfBirth'
                         value={this.state.placeOfBirth}
+                        required={true}
+                        minLength={3}
                         type='text'
                         onChange={this.handleChange}
                         placeholder='Place Of Birth'
@@ -88,14 +104,19 @@ class App extends Component {
                     <input 
                         name='phone'
                         value={this.state.phone}
+                        required={true}
+                        minLength={3}
                         type='tel'
+                        pattern='[0-9]{10}'
                         onChange={this.handleChange}
-                        placeholder='Phone Number'
+                        placeholder='1233217895'
                     />
                     <br />
                     <input 
                         name='favoriteFood'
                         value={this.state.favoriteFood}
+                        required={true}
+                        minLength={3}
                         type='text'
                         onChange={this.handleChange}
                         placeholder='Favorite Food'
@@ -104,6 +125,8 @@ class App extends Component {
                     <textarea
                             name='interests'
                             value={this.state.interests}
+                            required={true}
+                            minLength={3}
                             type='text'
                             onChange={this.handleChange}
                             placeholder='Tell Us About Yourself'
@@ -111,7 +134,7 @@ class App extends Component {
                     </textarea>
                     <br />
                     <div className='button'>
-                        <button>Submit Badge</button>
+                        <button disabled={this.checkButton()}>Submit Badge</button>
                     </div>
                 </form>
         <div id='badgeContainer'></div>
