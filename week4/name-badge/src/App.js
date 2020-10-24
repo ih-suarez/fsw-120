@@ -109,7 +109,7 @@ class App extends Component {
                         type='tel'
                         pattern='[0-9]{10}'
                         onChange={this.handleChange}
-                        placeholder='Phone Number'
+                        placeholder='1234567890'
                     />
                     <br />
                     <input 
