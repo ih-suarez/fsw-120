@@ -29,7 +29,7 @@ const Buttons = () => {
     const division = () => {
         setNumber1(null)
         setNumber2(null)
-        setTotal(_.divide(num1, num2))
+        setTotal(_.floor(_.divide(num1, num2), 2))
     }
     
     const multiplication = () => {
@@ -47,7 +47,7 @@ const Buttons = () => {
                 </div>
                 <p> = </p>
                 <div className='output'>
-                    <output>{total}</output>
+                    <output>Output: {total}</output>
                 </div>
             </div>
             <div className='buttonBox'>
