@@ -1,0 +1,519 @@
+body {
+    margin: 0;
+    background-color: rgb(36,52,71);
+    color: #F5F7FA;
+}
+
+button, input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+a {
+    color: white !important;
+}
+
+/* Entire Twitter Page */
+
+.tweetPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Header */
+
+.twitterHeader {
+    width: 360px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 300px) {
+
+    .twitterHeader {
+        display: none;
+    }
+
+    .displayedTweets {
+        justify-content: center;
+        width: 400px;
+    }
+
+    .tweetOutput {
+        width: 600px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .twitterContent {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 970px) {
+    .twitterHeader {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .signUpBox {
+        display: none;
+    }
+
+    .mightLike {
+        display: none;
+    }
+
+    .happening {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .search {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .twitterHeader {
+        display: none;
+    }
+}
+
+
+
+.twitterIcon, .home, .hashtag, .notifications, .messages, .bookmark, .lists, .profile, .more  {
+    display: flex;
+    align-content: space-between;
+    margin: 15px auto;
+    font-size: 20px;
+}
+
+.fa-twitter {
+    font-size: 30px !important;
+    margin: 0px 20px 0px;
+}
+
+.fa-home {
+    font-size: 20px !important;
+    margin: 0px 20px 0px;
+}
+
+.fa-hashtag {
+    font-size: 20px !important;
+    margin: 0px 20px 0px;
+}
+
+.fa-bell {
+    font-size: 20px !important;
+    margin: 0px 20px 0px;
+}
+
+.fa-envelope {
+    font-size: 20px !important;
+    margin: 0px 20px 0px;
+}
+
+.fa-bookmark {
+    font-size: 20px !important;
+    margin: 0px 20px 0px;
+}
+
+.fa-stream {
+    font-size: 20px !important;
+    margin: 0px 20px 0px;
+}
+
+.profilePicture {
+    margin: 0px 20px 0px;
+    width: 30px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.fa-ellipsis-h {
+    font-size: 20px !important;
+    margin: 0px 20px 0px;
+}
+
+.headerButtonWidth {
+    width: 200px !important;
+}
+
+/* Tweet Body */
+
+#tweets {
+    width: 600px;
+    margin-top: 40px;
+}
+
+
+
+ /* Tweet Header */
+
+.profileImage {
+    border: 1px solid white;
+}
+
+.tweetsHeader {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    border: 1px solid gray;
+    border-top: 0;
+    width: 600px;
+    background-color: rgb(36,52,71);
+}
+
+.pageLocation {
+    margin: 5px 15px 5px;
+}
+
+.fa-hand-sparkles {
+    margin: 10px 15px 5px;
+}
+
+/* Tweet Form */
+
+.formContainer {
+    display: flex;
+    width: 599px;
+    border: 2px solid gray;
+    border-width: 1px 1px 1px 2px;
+    padding: 10px 0px;
+}
+
+.tForm {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.tweetPicture {
+    width: 60px;
+    height: 62px;
+}
+
+.formInputs {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 485px;
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    width: 350px;
+    background-color: rgb(36,52,71);
+    margin-top: 20px;
+
+    -webkit-box-shadow: none;
+    -mox-box-shasow: none;
+
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.tweetButtons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.formIcons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 140px;
+}
+
+.fa-image, .fa-gift, .fa-project-diagram, .fa-smile {
+    margin-top: 10px;
+}
+
+.tweetFormButton {
+    background-color: rgb(57, 144, 231);
+    border-radius: 30px;
+    width: 70px;
+    padding: 10px;
+}
+
+/* Re Usable Tweet Displayed */
+
+.tweet {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid;
+}
+
+.tweetOutput {
+    display: flex;
+    margin: 0;
+    width: 598px;
+    border: 2px solid gray;
+    border-width: 10px 2px 2px 2px;
+}
+
+.tweetHeadLine {
+    margin-top: 15px;
+}
+
+.tweetContent {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width: 500px;
+}
+
+.userDisplay {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.userName {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+}
+
+.name {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
+
+.fa-chevron-down {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.fa-trash {
+    color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.tweetInput {
+    margin-top: 3px;
+}
+
+.interactions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+/* Side Content */
+
+.searchBar {
+    display: block;
+    position: fixed;
+    background-color: rgb(36,52,71);
+    padding: 15px 0px;
+    margin:  0px 20px;
+}
+
+.searchInput {
+    display: block;
+    width: 350px;
+    padding: 11px;
+    background-color: rgb(47, 65, 86);
+    border-radius: 27px;
+}
+
+.twitterContent {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    margin: 40px 20px;
+}
+
+.signUpBox {
+    margin: 32px 0px;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 350px;
+    padding: 0px 5px 15px;
+}
+
+.signUpButton {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonStyle {
+    width: 350px;
+    padding: 11px;
+    border-radius: 27px;
+    background-color: rgb(57, 144, 231);
+}
+
+.sideContenetImages {
+    width: 370px;
+    padding-bottom: -5px;
+}
+
+.sideImages {
+    width: 123px;
+    height: 90px;
+}
+
+.imageOne {
+    border-radius: 27px 0px 0px;
+}
+
+.imageThree {
+    border-radius: 0px 27px 0px;
+}
+
+.imageFour {
+    border-radius: 0px 0px 0px 27px;
+}
+
+.imageSix {
+    border-radius: 0px 0px 27px 0px;
+}
+
+.suggestionBox {
+    border: 2px solid;
+    border-radius: 25px;
+    margin: 20px 4px;
+    padding: 10px 15px;
+    width: 330px;
+}
+
+.suggestionHeader {
+    border-bottom: 2px solid;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.suggestions {
+    margin: 4px 4px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 3px;
+}
+
+.image {
+    margin-top: 5px;
+}
+
+.suggestionName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: span 2;
+}
+
+
+.user {
+    margin-top: 0px;
+}
+
+.followButton {
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 0px 15px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(57, 144, 231);
+}
+
+.happening {
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin: 4px;
+    width: 340px;
+}
+
+.happeningContainer {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 2px solid gray;
+}
+
+.whatIsHappening {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.whatIsHappeningContainer {
+    margin: auto;
+    border-bottom: 2px solid gray;
+}
+
+.topicContainer {
+    grid-column: span 3;
+}
+
+.topicAndTime {
+    display: flex;
+}
+
+.topic {
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+.happeningContent {
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+.happeningImageContainer {
+    margin-top: 10px;
+    float: right;
+}
+
+.happeningImage {
+    width: 70px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.showMore {
+    margin-top: 5px;
+}
+
+.footer {
+    padding: 10px 15px;
+    margin-top: 0px;
+    width: 350px;
+}
+
+.footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:  space-between;
+    padding: 0px 5px;
+}
+
+.footerMarginTop {
+    margin: 0px 10px;
+    padding: 5px;
+    font-size: 13px;
+}
