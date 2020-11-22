@@ -19,7 +19,7 @@ const Tweet = (props) =>
                     </div>
                 </div>
                 <div>
-                    <button className='options name' id={props.id} key={props.id} onClick={props.deleteTweet}><FontAwesomeIcon icon={faTrash} /></button>
+                    <button className='options name' id={props.id} key={props.id} onClick={() => props.deleteTweet(props.id)}><FontAwesomeIcon icon={faTrash} /></button>
                 </div>
             </div>
             <div className='tweetsDisplayed'>

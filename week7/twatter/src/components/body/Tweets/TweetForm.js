@@ -7,7 +7,7 @@ import ProfilePic from '/Users/spawn/bryan-university/fsw-120/week7/twatter/src/
 
 const TweetForm = (props) => {
     const [tweetInput, setTweetInput] = useState('')
-    const [tweetKey, setTweetKey] = useState('0')
+    const [tweetKey, setTweetKey] = useState(0)
 
     const handleChange = (e) => setTweetInput(e.target.value)
 
@@ -23,6 +23,7 @@ const TweetForm = (props) => {
         setTweetKey(tweetKey+1)
         props.setTweets(prevState => [tweetOutput, ...prevState])
     }
+    // prevState => [tweetOutput, ...prevState]
 
     return (
         <div className='formContainer'>

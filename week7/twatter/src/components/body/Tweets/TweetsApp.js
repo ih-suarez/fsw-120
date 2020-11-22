@@ -14,13 +14,24 @@ import ProfilePic from '/Users/spawn/bryan-university/fsw-120/week7/twatter/src/
 const TweetsApp = (props) => {
     const [tweets, setTweets] = useState([])
 
-    const deleteTweet = (i ,e) => {
+    const deleteTweet = (id) => {
+        console.log('tweet id', id) 
 
-        tweets.forEach( i => {
+        tweets.forEach(i => {
+            console.log('tweet index', i)
+
             let newCurrentTweets = tweets
-            _.remove(newCurrentTweets, i)
-            setTweets(i => _.remove(i))
+
+            if(i.id === id){
+
+                _.remove(newCurrentTweets, i)
+
+                console.log(newCurrentTweets)
+                
+                setTweets(newCurrentTweets)
+            }
         })
+
     
         // _.map(tweets, (tweetItem, i) => {
         //     // if (tweetItem.tweet === tweet) {
@@ -37,6 +48,7 @@ const TweetsApp = (props) => {
     
 
     const tweetsData = _.map(tweets, tweetItem => {
+        console.log(tweetItem)
         return(
             <Tweet key={tweetItem.id} name='Hector Suarez' userName='suarezHector' id={tweetItem.id} picture={ProfilePic}  tweet={tweetItem.tweet} deleteTweet={deleteTweet} />
         )
